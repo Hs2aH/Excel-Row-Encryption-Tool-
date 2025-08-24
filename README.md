@@ -33,17 +33,16 @@ Run the script from your terminal:
     python main.py
 
 **Output**
+
 Upon successful execution, the script will create a new directory named encrypted_rows/. This directory will contain:
 
-Encrypted files: Individual files for each row (e.g., encrypted_row_0.enc, encrypted_row_1.enc).
+1. Encrypted files: Individual files for each row (e.g., encrypted_row_0.enc, encrypted_row_1.enc).
 
-Log file: A CSV file named encryption_log.csv containing the decryption passwords.
+2. Log file: A CSV file named encryption_log.csv containing the decryption passwords.
 
 ### ⚠️ Security Considerations & Limitations
-Weak Passwords: The script is configured to generate short, 3-character passwords for educational purposes. These are not secure for sensitive data. For real-world use, you should increase the password length.
+Weak Passwords: The script is configured to generate short, 3-character passwords for educational purposes. These are not secure for sensitive data.For real-world use, you should increase the password length.
 
-Log File Security: The encryption_log.csv file contains all the passwords, so it must be protected and stored securely.
-
-No Decryption Script: The current version of the script does not include a decryption function. Decryption must be performed manually using OpenSSL.
-
-Missing Data Integrity: The script focuses on confidentiality but does not include measures for data integrity. In production, you would need to implement an authenticated encryption scheme.
++ Log File Security: The encryption_log.csv file contains all the passwords, so it must be protected and stored securely.
++ No Decryption Script: The current version of the script does not include a decryption function. Decryption must be performed manually using OpenSSL.
++ Missing Data Integrity: The script focuses on confidentiality but does not include measures for data integrity. In production, you would need to implement an authenticated encryption scheme.
